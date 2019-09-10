@@ -23,11 +23,18 @@ namespace SecretAdmirer
             SaveFileDialog sfd = new SaveFileDialog();
             var res = sfd.ShowDialog();
             FileStream fs = new FileStream(sfd.FileName, FileMode.Create);
-            using(StreamWriter sw = new StreamWriter(fs))
+            try
             {
-                sw.WriteLine(string.Format("Dear {0}", txtName.Text));
-                sw.WriteLine(string.Format("I think you are the cutest {0} in the world", cmbGender.Text));
-                sw.WriteLine("Love, Your Secret Admirer");
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    sw.WriteLine(string.Format("Dear {0}", txtName.Text));
+                    sw.WriteLine(string.Format("I think you are the cutest {0} in the world", cmbGender.Text));
+                    sw.WriteLine("Love, Your Secret Admirer");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Write failed");
             }
         }
     }
