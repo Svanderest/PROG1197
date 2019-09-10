@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sep10Console", "PROG1197\Sep10Console.csproj", "{98962A71-F3CB-4867-811A-92792E101CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIO", "SecretAdmirer\FileIO.csproj", "{DA3BE6BF-5523-45F5-91C4-F61776890D7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{98962A71-F3CB-4867-811A-92792E101CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98962A71-F3CB-4867-811A-92792E101CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98962A71-F3CB-4867-811A-92792E101CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3BE6BF-5523-45F5-91C4-F61776890D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3BE6BF-5523-45F5-91C4-F61776890D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3BE6BF-5523-45F5-91C4-F61776890D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3BE6BF-5523-45F5-91C4-F61776890D7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
