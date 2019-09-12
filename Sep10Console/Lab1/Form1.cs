@@ -12,7 +12,7 @@ namespace Lab1
 {
     public partial class FrmMain : Form
     {
-        int[,] Population = new int[13, 48];
+        int[,] Population = new uint[13, 48];
 
         public FrmMain()
         {
@@ -26,12 +26,14 @@ namespace Lab1
 
         private void BtnInsert_Click(object sender, EventArgs e)
         {
-            int provinceID;
-            int regionID;
-            if(!int.TryParse(txtRegion.Text, out regionID) || !int.TryParse(txtProvince.Text, out provinceID))
-            {
-
-            }
+            uint provinceID;
+            uint regionID;
+            if(!uint.TryParse(txtRegion.Text, out regionID) || !uint.TryParse(txtProvince.Text, out provinceID) || provinceID > 12 || regionID > 47)            
+                MessageBox.Show("Please enter a province ID between 0 and 12 and a region ID between 0 and 47");            
+            else if(!uint.TryParse(txtPopulation.Text,out Population[provinceID,regionID]))
+                MessageBox.Show("Please enter a numberic population value greater than 0");
+            else
+                MessageBox.Show("Success");
         }
     }
 }
