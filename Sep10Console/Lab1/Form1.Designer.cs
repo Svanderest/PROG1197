@@ -126,6 +126,7 @@
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "Clear Data";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnSave
             // 
@@ -135,6 +136,7 @@
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save to File";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // FrmMain
             // 
